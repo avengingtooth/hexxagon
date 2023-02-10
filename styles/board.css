@@ -1,0 +1,40 @@
+:root{
+    --columnWidth: 50px;
+    --canvasWidth: 75px;
+    --canvasHeight: 40px;
+    --hexagonsWidth: 475px;
+}
+
+body{
+    background-color: rgb(22, 21, 21);
+}
+
+canvas, .empty{
+    height: var(--canvasHeight);
+    width: var(--canvasWidth);
+    margin: 0;
+}
+
+.column{
+    display: grid;
+    margin: auto 0 auto 0;
+    width: var(--columnWidth);
+}
+
+.hexagons{
+    display: flex;
+    width: var(--hexagonsWidth);
+}
+
+body{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
